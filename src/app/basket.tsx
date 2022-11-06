@@ -1,6 +1,7 @@
 import React from 'react';
 import CardBasket from "./cardBasket";
 import { BasketItem } from "../model/model";
+import { TotalBasketCard } from "./totalBasketCard";
 
 interface BasketProps {
     basketItemList: BasketItem[],
@@ -16,6 +17,15 @@ export const Basket = (
         handleAddingItemInBasket,
         handleRemovingItemFromBasket
     }: BasketProps) => {
+
+    const allSum = (): number => {
+        const sumForEachItemArr = basketItemList.map((item) => {
+            const itemPrice = parseInt(item.price);
+            return itemPrice * item.count
+        })
+        return sumForEachItemArr.reduce((a, b) => a + b, 0)
+    }
+
     return (
         <div>
             <ul>

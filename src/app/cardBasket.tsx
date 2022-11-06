@@ -1,31 +1,31 @@
 import React from "react";
-import bucket from '../../icon/bucket.svg'
+import bucket from '../icon/bucket.svg'
 
 interface CardBasketProps {
     id: string,
-    img: any,
+    img: HTMLImageElement,
     title: string,
     price: string,
     count: number,
-    handleIncrement: any,
-    handleDecrement: any,
-    handleDelete: any,
+    handleIncrement: Function,
+    handleDecrement: Function,
+    handleDelete: Function,
 }
 
 const CardBasket = ({id, img, title, price, count, handleIncrement, handleDecrement, handleDelete}: CardBasketProps) => {
-    const eachSum = () => {
+    const eachSum = (): number => {
         return parseInt(price) * count
     }
     return (
         <div className='content'>
             <div className='card-content-header'>
                 <div className='card-content-image'>
-                    <img className='img-product' src={img}/>
+                    <img className='img-product' src={String(img)}/>
                     <div >
                         <button
                             className='bucket'
                             onClick={() => handleDelete(id)}>
-                            <img  src={bucket}/>
+                            <img  src={String(bucket)}/>
                         </button>
                     </div>
 

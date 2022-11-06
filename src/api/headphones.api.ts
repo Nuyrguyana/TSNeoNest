@@ -6,7 +6,7 @@ import { HeadPhone } from "../model/model";
 const headphones: HeadPhone[] = [
     {
         id: "1",
-        img: byz,
+        img: require('../image/s852I.png'),
         title: "Apple BYZ S852I",
         price: "2927",
         rate: "4.7"

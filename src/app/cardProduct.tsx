@@ -10,15 +10,16 @@ interface CardProductProps {
     handleAddItem: Function
 }
 
-export const CardProduct = ({
-                                img,
-                                title,
-                                price,
-                                star,
-                                rate,
-                                id,
-                                handleAddItem
-                            }: CardProductProps) => {
+export const CardProduct = (
+    {
+        img,
+        title,
+        price,
+        star,
+        rate,
+        id,
+        handleAddItem
+    }: CardProductProps) => {
     return (
         <div className='content'>
             <div className='card-content-image'>

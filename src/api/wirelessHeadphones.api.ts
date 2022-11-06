@@ -2,11 +2,12 @@ import gerlax from "../image/gerlax.png";
 import airPods from "../image/airPods.png";
 import borofone from "../image/borofone.png";
 import { WirelessHeadPhone } from "../model/model";
+import * as url from "url";
 
 const wirelessHeadphones: WirelessHeadPhone[] = [
     {
         id: "7",
-        img: airPods,
+        img: require("../image/airPods.png"),
         title: "Apple AirPods",
         price: "9527",
         rate: "4.7"

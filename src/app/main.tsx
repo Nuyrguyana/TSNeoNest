@@ -74,7 +74,7 @@ export const Main = () => {
 
     }
 
-    const sumOfItemsInBasket = () => {
+    const sumOfItemsInBasket = (): number => {
         const arrayOfCount = basketItemList.map((item) => item.count);
         return arrayOfCount.reduce((a, b) => a + b, 0)
     }
@@ -84,18 +84,18 @@ export const Main = () => {
             <div className='page'>
                 <Header itemCount={sumOfItemsInBasket()}/>
                 <Routes>
-                    <Route path='/basket'>
-                        <Basket
-                            basketItemList={basketItemList}
-                            handleAddingItemInBasket={handleAddingItemInBasket}
-                            handleRemovingItemFromBasket={handleRemovingItemFromBasket}
-                            handleDelete={removeElemFromBasketList}
-                        />
+                    <Route path='/basket' element={<Basket
+                        basketItemList={basketItemList}
+                        handleAddingItemInBasket={handleAddingItemInBasket}
+                        handleRemovingItemFromBasket={handleRemovingItemFromBasket}
+                        handleDelete={removeElemFromBasketList}
+                    />}>
+
                     </Route>
-                    <Route path='/'>
-                        <ShowCase headphones={headphones}
-                                  wirelessHeadphones={wirelessHeadphones}
-                                  addItemInBasket={handleAddingItemInBasket}/>
+                    <Route path='/' element={<ShowCase headphones={headphones}
+                                                       wirelessHeadphones={wirelessHeadphones}
+                                                       addItemInBasket={handleAddingItemInBasket}
+                    />}>
                     </Route>
                 </Routes>
                 <Footer/>
