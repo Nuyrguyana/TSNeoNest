@@ -16,16 +16,15 @@ export const ShowCase = (
         wirelessHeadphones,
         addItemInBasket
     }: ShowCaseProps) => {
+
     return (
         <div className='container'>
             <div className='ul-showcase'>
                 <ul>
                     <p className='subtitle'>Наушники</p>
                     {headphones.map((item) => {
-                        return (<li
-                                className='card-product'
-                                key={item.id.toString()}
-                            >
+                        return (
+                            <li className='card-product' key={item.id.toString()}>
                                 <CardProduct id={item.id}
                                              img={item.img}
                                              title={item.title}
@@ -33,7 +32,6 @@ export const ShowCase = (
                                              rate={item.rate}
                                              handleAddItem={addItemInBasket}
                                              star={star}
-
                                 />
                             </li>
                         )
@@ -42,10 +40,8 @@ export const ShowCase = (
                 <ul>
                     <p className='subtitle'>Беспроводные наушники</p>
                     {wirelessHeadphones.map((item) => {
-                        return (<li
-                                className='card-product'
-                                key={item.id.toString()}
-                            >
+                        return (
+                            <li className='card-product' key={item.id.toString()}>
                                 <CardProduct id={item.id}
                                              img={item.img}
                                              title={item.title}

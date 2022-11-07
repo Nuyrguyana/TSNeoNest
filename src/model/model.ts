@@ -5,6 +5,7 @@ export interface HeadPhone {
     price: string,
     rate: string,
 }
+
 export interface WirelessHeadPhone {
     id: string,
     img: HTMLImageElement,
@@ -12,6 +13,7 @@ export interface WirelessHeadPhone {
     price: string,
     rate: string,
 }
+
 export interface BasketItem {
     count: number
     id: string,

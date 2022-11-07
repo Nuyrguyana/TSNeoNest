@@ -7,14 +7,13 @@ interface HeaderProps {
     itemCount: number
 }
 
-export const Header = ({itemCount}: HeaderProps) => {
+export const Header = ({ itemCount }: HeaderProps) => {
+
     return (
         <header className='header'>
             <div className='container'>
                 <div className='header-inner'>
-                    <Link className='brand' to='/' title='main'>
-                        Qpick
-                    </Link>
+                    <Link className='brand' to='/' title='main'>Qpick</Link>
                     <nav className='header-nav'>
                         <Link className='header-nav-link' to='/' title='favorites'>
                             <img className='nav-icon' src={heart}/>

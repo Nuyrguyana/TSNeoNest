@@ -4,7 +4,8 @@ interface TotalBasketCardProps {
     allSum: number
 }
 
-export const TotalBasketCard = ({allSum}: TotalBasketCardProps) => {
+export const TotalBasketCard = ({ allSum }: TotalBasketCardProps) => {
+
     return (
         <div className='content-total'>
             <div className='total'>

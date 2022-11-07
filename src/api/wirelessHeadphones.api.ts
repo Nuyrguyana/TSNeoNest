@@ -1,8 +1,4 @@
-import gerlax from "../image/gerlax.png";
-import airPods from "../image/airPods.png";
-import borofone from "../image/borofone.png";
 import { WirelessHeadPhone } from "../model/model";
-import * as url from "url";
 
 const wirelessHeadphones: WirelessHeadPhone[] = [
     {
@@ -14,14 +10,14 @@ const wirelessHeadphones: WirelessHeadPhone[] = [
     },
     {
         id: "1",
-        img: gerlax,
+        img: require('../image/gerlax.png'),
         title: "Apple BYZ S852I",
         price: "2927",
         rate: "4.7"
     },
     {
         id: "9",
-        img: borofone,
+        img: require('../image/borofone.png'),
         title: "Borofone BO4",
         price: "7527",
         rate: "4.7"

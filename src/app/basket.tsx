@@ -1,5 +1,5 @@
 import React from 'react';
-import CardBasket from "./cardBasket";
+import { CardBasket } from "./cardBasket";
 import { BasketItem } from "../model/model";
 import { TotalBasketCard } from "./totalBasketCard";
 

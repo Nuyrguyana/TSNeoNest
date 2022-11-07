@@ -9,6 +9,7 @@ import { BasketItem, HeadPhone, WirelessHeadPhone } from "../model/model";
 import { Basket } from "./basket";
 
 export const Main = () => {
+
     const [basketItemList, setBasketItemList] = useState<BasketItem[]>([])
     const [headphones, setHeadphones] = useState<HeadPhone[]>([])
     const [wirelessHeadphones, setWirelessHeadphones] = useState<WirelessHeadPhone[]>([])
@@ -71,7 +72,6 @@ export const Main = () => {
         } else {
             updateBasketList(itemIndex, true)
         }
-
     }
 
     const sumOfItemsInBasket = (): number => {
@@ -84,18 +84,25 @@ export const Main = () => {
             <div className='page'>
                 <Header itemCount={sumOfItemsInBasket()}/>
                 <Routes>
-                    <Route path='/basket' element={<Basket
-                        basketItemList={basketItemList}
-                        handleAddingItemInBasket={handleAddingItemInBasket}
-                        handleRemovingItemFromBasket={handleRemovingItemFromBasket}
-                        handleDelete={removeElemFromBasketList}
-                    />}>
+                    <Route path='/basket'
+                           element={
+                               <Basket
+                                   basketItemList={basketItemList}
+                                   handleAddingItemInBasket={handleAddingItemInBasket}
+                                   handleRemovingItemFromBasket={handleRemovingItemFromBasket}
+                                   handleDelete={removeElemFromBasketList}
+                               />
+                           }>
 
                     </Route>
-                    <Route path='/' element={<ShowCase headphones={headphones}
-                                                       wirelessHeadphones={wirelessHeadphones}
-                                                       addItemInBasket={handleAddingItemInBasket}
-                    />}>
+                    <Route path='/'
+                           element={
+                               <ShowCase
+                                   headphones={headphones}
+                                   wirelessHeadphones={wirelessHeadphones}
+                                   addItemInBasket={handleAddingItemInBasket}
+                               />
+                           }>
                     </Route>
                 </Routes>
                 <Footer/>

@@ -5,22 +5,21 @@ import tlg from '../icon/Telegram.png'
 import ws from '../icon/Whatsapp.png'
 
 export const Footer = () => {
+
     return (
         <div className='footer'>
             <div className='content-footer'>
                 <div className='card-content'>
-                    <div className='brand b-footer'>
-                        qpick
-                    </div>
+                    <div className='brand b-footer'>qpick</div>
                     <div>
                         <ul className='menu-footer'>
                             <li>
                                 <Link className='link-footer' to='/favourites'>Favourites</Link>
                             </li>
-                             <li>
+                            <li>
                                 <Link className='link-footer' to='/basket'>Basket</Link>
                             </li>
-                             <li>
+                            <li>
                                 <Link className='link-footer' to='/contacts'>Contacts</Link>
                             </li>
                         </ul>

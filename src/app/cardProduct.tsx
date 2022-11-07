@@ -20,17 +20,16 @@ export const CardProduct = (
         id,
         handleAddItem
     }: CardProductProps) => {
+
     return (
         <div className='content'>
             <div className='card-content-image'>
                 <img className='img-product' src={img}/>
             </div>
-
             <div className='card-content'>
                 <span className='title'>{title}</span>
                 <span className='price'>{price} ₽</span>
             </div>
-
             <div className='card-content'>
                 <div>
                     <div className='star'>
