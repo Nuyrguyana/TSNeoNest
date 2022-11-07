@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import heart from '../icon/Vector.svg'
-import basket from '../icon/Vector2.svg'
+import heart from '../../../icon/Vector.svg'
+import basket from '../../../icon/Vector2.svg'
 
 interface HeaderProps {
     itemCount: number

@@ -1,5 +1,5 @@
 import React from "react";
-import bucket from '../icon/bucket.svg'
+import bucket from '../../../icon/bucket.svg'
 
 interface CardBasketProps {
     id: string,

@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import global from '../icon/globe.png'
-import vk from '../icon/VK.png'
-import tlg from '../icon/Telegram.png'
-import ws from '../icon/Whatsapp.png'
+import global from '../../../icon/globe.png'
+import vk from '../../../icon/VK.png'
+import tlg from '../../../icon/Telegram.png'
+import ws from '../../../icon/Whatsapp.png'
 
 export const Footer = () => {
 

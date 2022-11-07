@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Header } from "./header";
-import { ShowCase } from "./showCase";
-import { Footer } from "./footer";
-import fetchAllHeadphones from '../api/headphones.api'
-import fetchAllWirelessHeadphones from '../api/wirelessHeadphones.api'
-import { BasketItem, HeadPhone, WirelessHeadPhone } from "../model/model";
-import { Basket } from "./basket";
+import { Header } from "../containers/header/header";
+import { ShowCase } from "../containers/showCase";
+import { Footer } from "../containers/footer/footer";
+import fetchAllHeadphones from '../../api/headphones.api'
+import fetchAllWirelessHeadphones from '../../api/wirelessHeadphones.api'
+import { BasketItem, HeadPhone, WirelessHeadPhone } from "../../model/model";
+import { Basket } from "../containers/basket/basket";
 
 export const Main = () => {
 
