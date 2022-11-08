@@ -1,7 +1,8 @@
 import React from 'react';
-import { CardBasket } from "./cardBasket";
 import { BasketItem } from "../../../model/model";
+import { CardBasket } from "./cardBasket";
 import { TotalBasketCard } from "./totalBasketCard";
+import './style.css'
 
 interface BasketProps {
     basketItemList: BasketItem[],

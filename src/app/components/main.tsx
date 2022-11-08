@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Header } from "../containers/header/header";
-import { ShowCase } from "../containers/showCase";
+import { ShowCase } from "../containers/showcase/showCase";
 import { Footer } from "../containers/footer/footer";
 import fetchAllHeadphones from '../../api/headphones.api'
 import fetchAllWirelessHeadphones from '../../api/wirelessHeadphones.api'

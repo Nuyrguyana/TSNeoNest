@@ -3,6 +3,7 @@ import global from '../../../icon/globe.png'
 import vk from '../../../icon/VK.png'
 import tlg from '../../../icon/Telegram.png'
 import ws from '../../../icon/Whatsapp.png'
+import './style.css'
 
 export const Footer = () => {
 

@@ -1,0 +1,92 @@
+@mixin dimensions($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+.content {
+  @include dimensions(350px, 440px);
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.card-product-basket {
+  display: inline;
+}
+
+.card-content-image {
+  @include dimensions(220px, 237px);
+  display: flex;
+  padding: 15px 64px 54px 65px;
+}
+
+.img-product {
+  text-align: center;
+  width: 100%;
+}
+
+.bucket {
+  background: transparent;
+  border: none;
+  padding: 0 0 0 30px;
+  cursor: pointer;
+}
+
+.card-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.title {
+  @include dimensions(144px, 21px);
+  font-weight: bold;
+}
+
+.price {
+  @include dimensions(59px, 21px);
+  color: #FFA542;
+}
+
+.btn-count {
+  @include dimensions(35px, 30px);
+  margin: 0 10px;
+  color: white;
+  background-color: #FFA542;
+  border: none;
+  border-radius: 50%;
+}
+
+.content-total {
+  @include dimensions(345px, 114px);
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  margin: 15px;
+  padding: 15px;
+}
+
+.registration {
+  text-align: center;
+  height: 50px;
+  margin: 15px;
+}
+
+.registration-btn {
+  background: #737373;
+  color: #FFFFFF;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+  letter-spacing: 2px;
+
+  &:hover {
+    border: 2px solid #000000;
+    cursor: pointer;
+  }
+}
+

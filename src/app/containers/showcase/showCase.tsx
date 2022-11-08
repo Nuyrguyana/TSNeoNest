@@ -1,7 +1,8 @@
 import React from 'react';
 import { CardProduct } from "./cardProduct";
-import star from '../../icon/star.svg'
-import { HeadPhone, WirelessHeadPhone } from "../../model/model";
+import star from '../../../icon/star.svg'
+import { HeadPhone, WirelessHeadPhone } from "../../../model/model";
+import './style.css'
 
 
 interface ShowCaseProps {
