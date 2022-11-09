@@ -1,0 +1,74 @@
+.content-footer {
+  width: 98%;
+  height: 149px;
+  display: inline-block;
+  background: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-content-image {
+  width: 220px;
+  height: 237px;
+  display: flex;
+  padding: 15px 64px 54px 65px;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 700;
+  position: relative;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+.brand:after {
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  background-color: #000000;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.brand:hover:after, .brand:focus:after {
+  width: 100%;
+}
+
+.b-footer {
+  cursor: pointer;
+}
+
+.menu-footer {
+  list-style-type: none;
+  text-align: left;
+}
+
+.link-footer {
+  color: #000000;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+.link-footer:hover {
+  text-decoration: underline;
+}
+
+.global-icon {
+  width: 16px;
+}
+
+.menu-language {
+  margin: 15px;
+}
+
+.social-network {
+  margin: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
